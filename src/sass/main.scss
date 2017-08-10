@@ -41,6 +41,9 @@ $header-title-height: 32px;
                 text-decoration: none;
                 line-height: 24px;
                 font-size: 12px;
+                &:hover {
+                    color: #ccc;
+                }
             }
         }
     } 

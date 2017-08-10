@@ -32,6 +32,8 @@ html {
         text-decoration: none;
         line-height: 24px;
         font-size: 12px; }
+        .head .head-right .head-right-nav a:hover {
+          color: #ccc; }
 
 .painer {
   margin-top: 100px;
