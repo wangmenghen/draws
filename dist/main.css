@@ -12,7 +12,8 @@ html {
   border-bottom: 0;
   position: fixed;
   width: 100%;
-  top: 0; }
+  top: 0;
+  z-index: 20; }
   .head .head-left {
     height: 32px;
     float: left;
@@ -40,7 +41,7 @@ html {
   background-color: #ccc; }
   .painer .desc {
     float: left;
-    padding: 32px 8px 32px 36px; }
+    padding: 62px 0px 20px 36px; }
     .painer .desc p {
       text-indent: 2em; }
     .painer .desc .badge {
@@ -52,9 +53,10 @@ html {
       font-size: 10px;
       font-weight: bold; }
   .painer .painer-avator {
-    padding: 40px 30px; }
+    padding: 40px 0px; }
     .painer .painer-avator img {
-      width: 100%; }
+      border-radius: 50%;
+      max-width: 250px; }
     .painer .painer-avator h4 {
       text-align: center; }
 
@@ -76,12 +78,11 @@ html {
   margin-bottom: 20px;
   padding-top: 24px;
   padding: 10px; }
-  .cards-list .cards-column-3 {
+  .cards-list .cards-column {
     float: left;
-    border-radius: 8px; }
-    .cards-list .cards-column-3 .card {
-      border-radius: 8px;
-      float: left;
+    border-radius: 8px;
+    margin-bottom: 20px; }
+    .cards-list .cards-column .card {
       display: block;
       margin: 0 10px;
       background-color: white;
@@ -89,7 +90,7 @@ html {
       border: 1px solid #ccc;
       border-radius: 8px;
       box-shadow: 0 6px 8px 0 rgba(7, 24, 27, 0.3); }
-      .cards-list .cards-column-3 .card img {
+      .cards-list .cards-column .card img {
         width: 100%;
         display: block;
         height: auto; }
