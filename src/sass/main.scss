@@ -29,11 +29,15 @@ $header-title-height: 32px;
             display: table-cell;
             vertical-align: middle;
             height: 100px;
+            span {
+                padding: 0px 4px 8px 4px;
+                border: 1px solid #7d69ff;
+            }
 
             .active {
                 border-radius: 8px;
                 border: 1px solid white;
-                padding: 0px 4px 8px 6px;
+                
             }
 
             a {

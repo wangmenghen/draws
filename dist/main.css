@@ -24,10 +24,12 @@ html {
       display: table-cell;
       vertical-align: middle;
       height: 100px; }
+      .head .head-right .head-right-nav span {
+        padding: 0px 4px 8px 4px;
+        border: 1px solid #7d69ff; }
       .head .head-right .head-right-nav .active {
         border-radius: 8px;
-        border: 1px solid white;
-        padding: 0px 4px 8px 6px; }
+        border: 1px solid white; }
       .head .head-right .head-right-nav a {
         color: white;
         text-decoration: none;

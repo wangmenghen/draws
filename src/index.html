@@ -7,7 +7,7 @@
     <link href="dist/main.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="dist/font-awesome.min.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".head-right-nav" data-offset="80">
     <div class="head">
         <div class="container ">
             <div class="head-left">素描</div>
@@ -21,7 +21,7 @@
             
         </div> 
     </div>
-    <div id="painer" data-spy="scroll" data-target=".head-right-nav">
+    <div id="painer" >
     <div id="desc" class="container painer" >
         <div class="row" >
             <div class="desc col-xs-12 col-md-8">
@@ -103,5 +103,15 @@
 </div>
     <script type="text/javascript" src="dist/jquery.min.js"></script>
     <script type="text/javascript" src="dist/bootstrap.min.js"></script> 
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".head-right-nav").on('click', 'span', function(){
+                $(".head-right-nav span").each(function(i){
+                    $(this).removeClass("active");
+                });
+                $(this).addClass('active');
+            });
+        });
+    </script>
 </body>
 </html>
