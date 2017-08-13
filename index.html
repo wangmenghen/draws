@@ -8,18 +8,26 @@
     <link rel="stylesheet" type="text/css" href="dist/font-awesome.min.css">
 </head>
 <body data-spy="scroll" data-target="#link" data-offset="80"><!--  -->
-    <div class="head">
-        <div class="container ">
-            <div class="head-left">素描</div>
-            <div id="link" class="head-right" >
-                <ul class="nav head-right-nav ">
+    <nav class="navbar navbar-default head">
+        <div class="container">    
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#link" aria-expanded="false">
+                    <span class="sr-only">折叠菜单</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="head-left">素描</a>
+            </div>
+            <div id="link" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right head-right-nav">
                     <li><a href="#descs">关于素描</a></li>
                     <li><a href="#paintings">素描展示</a></li>
                     <li><a href="#contatuss">联系交流</a></li>
                 </ul>
-            </div>
+            </div>                      
         </div> 
-    </div>
+    </nav> 
     <div id="descs" class="container painer" >
         <div class="row" >
             <div class="desc col-xs-12 col-md-8">
