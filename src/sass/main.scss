@@ -23,21 +23,20 @@ $header-title-height: 32px;
         //margin-top: ($header-height - $header-title-height) / 2; 
     }
 
+
     .head-right {
         float: right;
         .head-right-nav {
             display: table-cell;
             vertical-align: middle;
             height: 100px;
-            span {
-                padding: 0px 4px 8px 4px;
+            li {
                 border: 1px solid #7d69ff;
             }
 
             .active {
                 border-radius: 8px;
-                border: 1px solid white;
-                
+                border: 1px solid white;   
             }
 
             a {
@@ -47,12 +46,21 @@ $header-title-height: 32px;
                 font-size: 12px;
                 &:hover {
                     color: #ccc;
+                    background-color: #7d69ff !important;
+                    border-radius: 8px;
+                }
+            }
+
+            li {
+                float: left;
+                &:hover {
+                    background-color: #7d69ff !important;
                 }
             }
         }
     } 
-}
 
+}
 .painer {
     margin-top: $header-height;
     background-color: #ccc;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>个人作品集</title>
@@ -7,22 +7,20 @@
     <link href="dist/main.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="dist/font-awesome.min.css">
 </head>
-<body data-spy="scroll" data-target=".head-right-nav" data-offset="80">
+<body data-spy="scroll" data-target="#link" data-offset="80"><!--  -->
     <div class="head">
         <div class="container ">
             <div class="head-left">素描</div>
-            <div class="head-right">
-                <div class="head-right-nav nav">
-                    <span class="active"><a href="#desc">关于素描</a></span>
-                    <span><a href="#painting">素描展示</a></span>
-                    <span><a href="#contatus">联系交流</a></span>
-                </div>
+            <div id="link" class="head-right" >
+                <ul class="nav head-right-nav ">
+                    <li><a href="#descs">关于素描</a></li>
+                    <li><a href="#paintings">素描展示</a></li>
+                    <li><a href="#contatuss">联系交流</a></li>
+                </ul>
             </div>
-            
         </div> 
     </div>
-    <div id="painer" >
-    <div id="desc" class="container painer" >
+    <div id="descs" class="container painer" >
         <div class="row" >
             <div class="desc col-xs-12 col-md-8">
                 <p>素描是一种用绘图工具使其表现在二维 二维就是平面的意思 材质上的视觉艺术和造型艺术，它的目的是在两维的纸面上创造三维的立体形态。使用的工具包括铅笔、石墨、蜡笔、墨水、木炭、粉笔、马克笔、橡皮擦等，以及电子绘图。素描最常见的载体是纸，其他材料如硬纸板，塑料，皮革，木材，帆布等都可使用[1]。</p>
@@ -40,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div id="painting" class="container painting">
+    <div id="paintings" class="container painting">
         <h2 class="text-center">经典作品</h2>
         <hr class="separator">
         <div class="cards-list">
@@ -68,10 +66,7 @@
             </div>
         </div>
     </div>
-    <div class="con">
-
-    </div>
-    <div id="contatus" class="container contatus">
+    <div id="contatuss" class="container contatus">
         <div class="">    
             <h3 class="text-center">素描业余爱好者，不追求主流画法，欢迎志同道合的素描爱好者一起交流
             </h3>
@@ -100,18 +95,20 @@
     <div class="foot container">
         <h2 class="text-center">版权归...</h2>
     </div>
-</div>
     <script type="text/javascript" src="dist/jquery.min.js"></script>
     <script type="text/javascript" src="dist/bootstrap.min.js"></script> 
     <script type="text/javascript">
-        $(document).ready(function() {
+        /*$(document).ready(function() {
             $(".head-right-nav").on('click', 'span', function(){
                 $(".head-right-nav span").each(function(i){
                     $(this).removeClass("active");
                 });
                 $(this).addClass('active');
             });
-        });
+        });*/
+$(document).ready(function(){
+    $('body').scrollspy({target: ".head-right", offset: 50});
+});
     </script>
 </body>
 </html>

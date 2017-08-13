@@ -24,8 +24,7 @@ html {
       display: table-cell;
       vertical-align: middle;
       height: 100px; }
-      .head .head-right .head-right-nav span {
-        padding: 0px 4px 8px 4px;
+      .head .head-right .head-right-nav li {
         border: 1px solid #7d69ff; }
       .head .head-right .head-right-nav .active {
         border-radius: 8px;
@@ -36,7 +35,13 @@ html {
         line-height: 24px;
         font-size: 12px; }
         .head .head-right .head-right-nav a:hover {
-          color: #ccc; }
+          color: #ccc;
+          background-color: #7d69ff !important;
+          border-radius: 8px; }
+      .head .head-right .head-right-nav li {
+        float: left; }
+        .head .head-right .head-right-nav li:hover {
+          background-color: #7d69ff !important; }
 
 .painer {
   margin-top: 100px;
